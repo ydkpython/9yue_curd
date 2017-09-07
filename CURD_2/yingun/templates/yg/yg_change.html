@@ -1,0 +1,16 @@
+{% load yg_func %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>进行数据编辑</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div>{% func1 obj list_display ygadmin_obj %}</div>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

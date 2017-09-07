@@ -1,0 +1,14 @@
+{% load yg_func %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>查看列表</h1>    <a href="{{ url }}add/">新增</a>
+    {% func result_list list_display ygadmin_obj%}
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<table border="1">
+    <tr>
+        {% for title in yy %}
+            <th>{{ title }}</th>
+        {% endfor %}
+    </tr>
+    {% for item in xx %}
+        <tr>
+            {% for val in item %}
+                <td>{{ val }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
